@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Laboratorio 2 - Semana 5</title>
+<style>
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+h1{
+    color: darkblue;
+}
+section{
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+button{
+    margin-top: 5px;
+}
+.caja{
+    padding: 10px;
+    background: lightgray;
+    margin: 5px 0;
+}
+.resaltado{
+    background: yellow;
+}
+img{
+    display: block;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="titulo">Laboratorio 2 - Programación Computacional IV</h1>
+
+<section>
+    <h2>Cambiar texto</h2>
+    <p id="parrafo">Texto original</p>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+</section>
+
+<section>
+    <h2>Cambiar color por clase</h2>
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 2</div>
+    <button onclick="cambiarColor()">Cambiar color</button>
+</section>
+
+<section>
+    <h2>Ocultar elementos por etiqueta</h2>
+    <p>Elemento A</p>
+    <p>Elemento B</p>
+    <button onclick="ocultarParrafos()">Ocultar párrafos</button>
+</section>
+
+<section>
+    <h2>Modificar con querySelector</h2>
+    <div id="contenedor">
+        <span>Texto dentro de span</span>
+    </div>
+    <button onclick="modificarSpan()">Modificar span</button>
+</section>
+
+<section>
+    <h2>Lista con querySelectorAll</h2>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+    <button onclick="resaltarLista()">Resaltar lista</button>
+</section>
+
+<section>
+    <h2>Campo de entrada</h2>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+    <button onclick="mostrarNombre()">Mostrar</button>
+    <p id="resultado"></p>
+</section>
+
+<section>
+    <h2>Imagen</h2>
+    <img id="imagen" src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" width="200">
+    <button onclick="cambiarImagen()">Cambiar imagen</button>
+</section>
+
+<section>
+    <h2>Contador</h2>
+    <h3 id="contador">0</h3>
+    <button onclick="aumentar()">Aumentar</button>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
